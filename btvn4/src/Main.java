@@ -129,10 +129,16 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int giatienyeucau =sc.nextInt();
         for(Book b: book){
-            if (giatienyeucau<=b.getGiaTien()){
+            if (giatienyeucau>=b.getGiaTien()){
                 b.display();
+                break;
+            }
+            else{
+                System.out.println("Khong co sach phu hop.");
+                break;
             }
         }
+
     }
 
     public static void sapXepTheoGiaTien(Book[] book){
