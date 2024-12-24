@@ -47,6 +47,7 @@ public class Student {
 
     public Student() {
     }
+//    phim tat tao constructor alt + ins
 
     public Student(int studentCode, String fullName, int age, String phoneNumber, String email) {
         this.studentCode = studentCode;

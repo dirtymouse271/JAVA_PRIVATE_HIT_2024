@@ -48,8 +48,7 @@ public class Bai1 {
             else if(a[1]==1){
                 System.out.print("mười ");
             }
-            else if(a[1]==2){
-                System.out.print("hai mươi ");
+            else if(a[1]==2){                System.out.print("hai mươi ");
             }
             else if(a[1]==3){
                 System.out.print("ba mươi ");

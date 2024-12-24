@@ -6,7 +6,7 @@ public class Bai1 {
         StringBuilder answer = new StringBuilder();
         while (a > 0) {
             answer.append(c.charAt(a % b));
-            a = a/b;
+            a = a / b;
         }
         return answer.reverse();
     }
@@ -15,6 +15,7 @@ public class Bai1 {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        System.out.println(convert(a,b));
+        System.out.println(convert(a, b));
+        sc.close();
     }
 }

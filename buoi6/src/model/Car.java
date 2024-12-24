@@ -1,3 +1,5 @@
+package model;
+
 public abstract class Car {
     private String id;
     private String name;
@@ -48,7 +50,7 @@ public abstract class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "model.Car{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", price=" + price +

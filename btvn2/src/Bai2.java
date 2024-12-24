@@ -23,7 +23,6 @@ public class Bai2 {
                 maxSum = Math.max(maxSum, tempSum);
             }
         }
-
         return maxSum;
     }
 

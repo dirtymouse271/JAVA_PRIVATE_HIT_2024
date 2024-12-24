@@ -7,11 +7,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Book[] book = new Book[index];
-        book[0] = new Book(12345, "khoa hoc1", "Thanh", 2012, "khcb", 100000);
-        book[1] = new Book(12346, "khoa hoc2", "Keo", 2015, "toan", 150000);
-        book[2] = new Book(12347, "khoa hoc3", "P.Thanh", 2020, "van", 170000);
-        book[3] = new Book(12348, "khoa hoc4", "D.Thanh", 2000, "anh", 230000);
-        book[4] = new Book(12349, "khoa hoc5", "Thanh Pham", 2024, "tin hoc", 180000);
+        book[0] = new Book(12345, "khoa hoc1", new Tacgia("Thanh"), 2012, "khcb", 100000);
+        book[1] = new Book(12346, "khoa hoc2", new Tacgia("Keo"), 2015, "toan", 150000);
+        book[2] = new Book(12347, "khoa hoc3", new Tacgia("P.Thanh"), 2020, "van", 170000);
+        book[3] = new Book(12348, "khoa hoc4", new Tacgia("D.Thanh"), 2000, "anh", 230000);
+        book[4] = new Book(12349, "khoa hoc5", new Tacgia("PhamThanh"), 2024, "tin hoc", 180000);
 
         while (true) {
             System.out.println("1, Them sach moi");
@@ -106,7 +106,7 @@ public class Main {
         System.out.print("Ten Sach: ");
         b.setTenSach(sc.nextLine());
         System.out.print("Ten Tac Gia: ");
-        b.setTenTacGia(sc.nextLine());
+        b.setTenTacGia(new Tacgia(sc.nextLine()));
         System.out.print("Nam San Xuat: ");
         b.setNamSanXuat(sc.nextInt());
         sc.nextLine();

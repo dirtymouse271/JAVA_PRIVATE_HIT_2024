@@ -1,4 +1,9 @@
 package service;
+import model.PhysicalProduct;
 
-public interface IUser {
+import java.util.Scanner;
+
+public interface IUserService {
+    public void login(Scanner scanner);
+    public void logout();
 }

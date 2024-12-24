@@ -1,19 +1,20 @@
 import java.util.Scanner;
 
 public class Book {
-    private int maSach;
-    private String tenSach;
-    private String tenTacGia;
-    private int namSanXuat;
-    private String tomTatNoiDung;
-    private double giaTien;
+    protected int maSach;
+    protected String tenSach;
+    protected Tacgia tenTacGia;
+    protected int namSanXuat;
+    protected String tomTatNoiDung;
+    protected double giaTien;
 
     Scanner scanner = new Scanner(System.in);
+
 
     public Book() {
     }
 
-    public Book(int maSach, String tenSach, String tenTacGia, int namSanXuat, String tomTatNoiDung, double giaTien) {
+    public Book(int maSach, String tenSach, Tacgia tenTacGia, int namSanXuat, String tomTatNoiDung, double giaTien) {
         this.maSach = maSach;
         this.tenSach = tenSach;
         this.tenTacGia = tenTacGia;
@@ -38,11 +39,11 @@ public class Book {
         this.tenSach = tenSach;
     }
 
-    public String getTenTacGia() {
+    public Tacgia getTenTacGia() {
         return tenTacGia;
     }
 
-    public void setTenTacGia(String tenTacGia) {
+    public void setTenTacGia(Tacgia tenTacGia) {
         this.tenTacGia = tenTacGia;
     }
 
@@ -93,7 +94,7 @@ public class Book {
         scanner.nextLine();
         tenSach = scanner.nextLine();
         System.out.println("Nhap ten tac gia: ");
-        tenTacGia = scanner.next();
+        tenTacGia.nhapten(scanner);
         System.out.println("Nhap nam san xuat : ");
         namSanXuat = scanner.nextInt();
         System.out.println("Nhap noi dung : ");

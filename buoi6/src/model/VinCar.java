@@ -1,3 +1,5 @@
+package model;
+
 public class VinCar extends Car {
     public VinCar() {
     }
@@ -9,6 +11,6 @@ public class VinCar extends Car {
 
     @Override
     public String toString() {
-        return super.toString() +  "VinCar{}";
+        return super.toString() +  "model.VinCar{}";
     }
 }

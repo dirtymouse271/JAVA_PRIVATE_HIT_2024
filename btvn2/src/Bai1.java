@@ -28,5 +28,6 @@ public class Bai1 {
             nums[i] = sc.nextInt();
         }
         System.out.println(search(nums, k));
+        sc.close();
     }
 }

@@ -6,5 +6,9 @@ public class Bai2 {
         String str = sc.next();
         String[] result1;
         String[] result2;
+        for(char c : str.toCharArray()) {
+            if (Character.isDigit(c))
+                System.out.println(c);
+        }
     }
 }
