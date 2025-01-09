@@ -1,3 +1,5 @@
+package model;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -5,6 +7,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
+import java.util.Scanner;
 
 public class JDBCConnector {
     private static String URL;
@@ -42,5 +45,21 @@ public class JDBCConnector {
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
+    }
+
+    public static void addproduct(Scanner scanner) throws SQLException {
+        Connection connection = getConnection();
+        System.out.println("Nhap id: ");
+        int id = scanner.nextInt();
+        System.out.println("Nhap ten: ");
+        String name = scanner.nextLine();
+        System.out.println("Nhap vi tri: ");
+        String viTri = scanner.nextLine();
+        System.out.println("Nhap luong: ");
+        double salary = scanner.nextDouble();
+        scanner.nextLine();
+        System.out.println("Nhap ngay sa thai: ");
+        String hireDate = scanner.nextLine();
+//        String query = INSERT INTO
     }
 }
